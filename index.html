@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0637a18473.js" crossorigin="anonymous"></script>
+<style>
+body {
+display: flex;
+flex-direction: column;
+background-image: url(images/bg-desktop.svg);
+background-size: cover;
+background-color:  hsl(257, 40%, 49%);
+font-family: 'Poppins', sans-serif;
+padding-left: 2.5rem;
+}
+.img-text {
+display: flex;
+}
+
+button {
+  color: hsl(257, 40%, 49%);
+padding: 13px 50px;
+background-color: rgb(220, 220, 230);
+border: none;
+border-radius: 20px;
+margin-top: 0.7rem;
+box-shadow: 0px 0px 8px rgb(26, 26, 26);
+font-family: 'Open Sans', sans-serif;
+}
+button:hover {
+color: rgb(220, 220, 230);
+background-color: hsl(300, 69%, 71%);
+}
+* {
+overflow-x: hidden;
+}
+.hu img {
+width: 150px;
+}
+.hu {
+margin-top: 1.6rem;
+margin-bottom: 4rem;
+}
+h1 {
+font-size: 35px;
+color: white;
+font-weight: 600;
+margin-bottom: 6px;
+}
+.img {
+width: 50%;
+}
+.text {
+width: 45%;
+margin-left: 2.4rem;
+margin-right: 2.5rem;
+}
+.img img {
+width: 100%;
+min-width: 350px;
+}
+p {
+font-weight: 400;
+color: rgb(220, 220, 230);
+margin-top: 0;
+line-height: 25px;
+}
+.links  {
+display: flex;
+justify-content: end;
+margin-top: 15rem;
+text-align: right;
+}
+.fa-facebook, .fa-twitter, .fa-instagram{
+border: solid 1px white;
+border-radius: 48%;
+color: white;
+font-size: 22px;
+margin: 0 8px;
+padding: 4px;
+background-color: transparent;
+}
+
+
+@media (max-width: 800px) {
+.img-text {
+width: 90%;
+max-width: 400px;
+flex-direction: column;
+margin: 10px auto;
+}
+.img {
+width: 100%;
+text-align: center;
+}
+.text {
+width: 100%;
+text-align: center;
+}
+.img, .text {
+margin-left: auto;
+margin-right: auto;
+}
+.img img {
+min-width: 50px;
+max-width: 100%;
+}
+body {
+padding: 0 1rem;
+}
+.links  {
+display: flex;
+justify-content: center;
+margin-top: 6rem;
+text-align: center;
+font-size: 22px;
+}
+}
+  </style>
+</head>
+<body>
+<div class="hu">
+<img src="images/logo.svg" alt="huddle-logo">
+</div>
+<div class="img-text">
+<div class="img">
+<img src="images/illustration-mockups.svg" alt="">
+</div>
+<div class="text">
+  <h1>Build The Community Your Fans Will Love</h1>
+
+  <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+  Create connections with your users as you engage in genuine discussion.</p> 
+
+  <button>Register</button>
+  <div class="links">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
